@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.topbar {
+    background: #007778;
+    color: white;
+    font-size: 14px;
+}
+
+.topbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.top-links .divider {
+    width: 1px;
+    height: 15px;
+    background: rgba(255,255,255,0.6);
+}
+
+.logo h2 {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.search-wrapper .form-control {
+    border-radius: 0;
+    border: 1px solid #eaeaea;
+}
+
+.search-wrapper .input-group-text {
+    border-radius: 0;
+    border: 1px solid #eaeaea;
+    cursor: pointer;
+}
+
+.icon-link {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.icon-link i {
+    margin-right: 4px;
+    font-size: 16px;
+}
+
+.category-nav .nav-link {
+    color: black;
+    font-weight: 500;
+}
+
+.category-nav .nav-link:hover {
+    color: #007778;
+}
+/* Sidebar */
+.filter-box {
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 6px;
+}
+
+.filter-header {
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-list {
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+}
+
+.filter-list li {
+    margin-bottom: 10px;
+}
+
+.filter-list li.active a {
+    font-weight: 600;
+}
+
+.filter-list a {
+    text-decoration: none;
+    color: #444;
+}
+
+/* Price */
+.price-input input {
+    width: 70px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.price-btn {
+    background: #ff4d4d;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+/* Size */
+.size-btn {
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 5px 15px;
+    border-radius: 6px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+/* Color dots */
+.color-dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 6px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* PRODUCT CARD */
+.product-card {
+    position: relative;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 300px;
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card .badge.sale {
+    background: #ff3b3b;
+    color: #fff;
+    padding: 5px 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+}
+
+.product-card .fav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.stars {
+    color: #ffc107;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.product-title {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.price {
+    color: #ff3b3b;
+    font-weight: 700;
+}
+
+.price span {
+    color: #999;
+    font-weight: 400;
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+/* Add to cart button */
+.add-btn {
+    border: 1px solid #ccc;
+    width: 100%;
+    background: #fff;
+    border-radius: 7px;
+    padding: 8px 0;
+    transition: 0.2s;
+}
+
+.add-btn:hover {
+    background: #f1f1f1;
+}
+
+/* Sort dropdown */
+.sort-select {
+    width: 150px;
+}
+.snobella-footer {
+    background: #f6f6f6;
+    color: #000;
+}
+
+.snobella-footer .logo {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.footer-contact i {
+    margin-right: 8px;
+}
+
+.send-btn {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 7px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.send-btn:hover {
+    background: #eaeaea;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list li {
+    margin-bottom: 8px;
+}
+
+.footer-list li a {
+    text-decoration: none;
+    color: #333;
+    transition: 0.2s;
+}
+
+.footer-list li a:hover {
+    color: #000;
+    font-weight: 500;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ddd;
+}
+
+.social-icons i {
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.social-icons i:hover {
+    color: #000;
+}
+@media(max-width: 992px) {
+    .search-wrapper {
+        order: 3;
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width: 768px) {
+    .category-nav {
+        flex-wrap: wrap;
+    }
+}

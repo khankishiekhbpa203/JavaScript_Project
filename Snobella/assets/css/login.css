@@ -1,0 +1,60 @@
+/* Body background və ortalanmış card */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Login card */
+.login-card {
+  background: #f5f9ff;
+  padding: 30px;
+  border-radius: 15px;
+  border: 2px solid #000;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Başlıq */
+.login-card h3 {
+  color: #0072ff;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* Input focus */
+.login-card input.form-control:focus {
+  border-color: #0072ff;
+  box-shadow: 0 0 8px rgba(0, 114, 255, 0.3);
+  outline: none;
+}
+
+/* Login düyməsi */
+.btn-complete {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn-complete:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+/* Mesaj */
+#loginMessage {
+  margin-top: 15px;
+  font-weight: 600;
+  text-align: center;
+}

@@ -1,11 +1,576 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snobella</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
+
 <body>
+
+    <div class="topbar py-1">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-telephone"></i>
+                <span>+748 383 23 14</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-3 top-links">
+                <a href="#">Terms Of Use</a>
+                <div class="divider"></div>
+                <a href="#">FAQ</a>
+                <div class="divider"></div>
+                <a href="#">Customer service</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="py-3">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap">
+
+            <div class="logo">
+                <h2 class="m-0">Snobella</h2>
+            </div>
+
+            <div class="search-wrapper flex-grow-1 mx-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="search all product">
+                    <span class="input-group-text bg-white">
+                        <i class="bi bi-search"><img src="assets/icons/search1.png" alt=""></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-4 account-icons">
+                <div class="dropdown">
+                    <a class="icon-link dropdown-toggle d-flex align-items-center gap-1" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+
+                        <img src="assets/icons/avatar 1.png" alt="" width="22">
+                        Profile
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="login.html">Login</a></li>
+                        <li><a class="dropdown-item" href="register.html">Register</a></li>
+                    </ul>
+                </div>
+
+                <a href="#" class="icon-link">
+                    <img src="assets/icons/heart (2).png" width="20"> wishlist
+                </a>
+
+                <a href="#" class="icon-link">
+                    <img src="assets/icons/bag.png" width="20"> basket
+                </a>
+
+            </div>
+        </div>
+
+        <nav class="container mt-3">
+            <ul class="nav gap-4 category-nav">
+                <li class="nav-item"><a class="nav-link" href="productlist.html">Evening bags</a></li>
+                <li class="nav-item"><a class="nav-link" href="productlist.html">Shoulder bag</a></li>
+                <li class="nav-item"><a class="nav-link" href="productlist.html">Backpack</a></li>
+                <li class="nav-item"><a class="nav-link" href="productlist.html">Hand bag</a></li>
+                <li class="nav-item"><a class="nav-link" href="productlist.html">Postman bag</a></li>
+                <li class="nav-item"><a class="nav-link" href="productlist.html">Belt bags</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero-banner py-5">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="hero-content">
+                        <p class="discount-text">30% off</p>
+
+                        <h2 class="hero-title">Handbag Products</h2>
+
+                        <p class="hero-desc">
+                            It is a long established fact that azz reader will be distracted
+                            by the zz readable content expound the actualzz teachings of the
+                            great explorer
+                        </p>
+
+                        <a href="#" class="btn shop-btn">Shop now</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <img src="assets/images/image1.png" alt="handbags" class="img-fluid hero-img">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="features-section py-4">
+        <div class="container">
+            <div class="row text-center justify-content-between">
+
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="feature-item">
+                        <i class="feature-icon"><img src="assets/icons/transport 1.png" alt=""></i>
+                        <p class="feature-text">Guaranteed delivery</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="feature-item">
+                        <i class="feature-icon"><img src="assets/icons/entrance.png" alt=""></i>
+                        <p class="feature-text">Do not come back</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="feature-item">
+                        <i class="feature-icon"><img src="assets/icons/lock-alt.png" alt=""></i>
+                        <p class="feature-text">Safe and secure shopping</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="feature-item">
+                        <i class="feature-icon"><img src="assets/icons/credit-card.png" alt=""></i>
+                        <p class="feature-text">Payment at the door or online</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="container my-5">
+        <div id="bagSlider" class="carousel slide">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="row g-3">
+
+                        <div class="col-6 col-md-3">
+                            <div class="category-card p-3">
+                                <h6 class="mb-3">Shoulder bags</h6>
+                                <img src="assets/images/bag1.png" class="img-fluid category-img" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-3">
+                            <div class="category-card p-3">
+                                <h6 class="mb-3">Hand bag</h6>
+                                <img src="assets/images/bag2.png" class="img-fluid category-img" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-3">
+                            <div class="category-card p-3">
+                                <h6 class="mb-3">Backpack</h6>
+                                <img src="assets/images/bag3.png" class="img-fluid category-img" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-3">
+                            <div class="category-card p-3">
+                                <h6 class="mb-3">Evening bags</h6>
+                                <img src="assets/images/bag4.png" class="img-fluid category-img" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+    </div>
+
+    <div class="container my-5 position-relative">
+
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h3 class="fw-bold">Featured Products</h3>
+            <a href="#" class="text-decoration-none fw-semibold">View all products →</a>
+        </div>
+
+        <div id="featuredSlider" class="carousel slide">
+            <div class="carousel-inner">
+
+                <!-- SLIDE -->
+                <div class="carousel-item active">
+                    <div class="row g-4">
+
+                        <!-- Product 1 -->
+                        <div class="col-12 col-md-4">
+                            <div class="product-card p-3 position-relative">
+
+                                <span class="badge new-badge">New</span>
+                                <span class="fav-icon">♡</span>
+
+                                <img src="assets/images/img1.png" class="img-fluid mb-3 product-img" alt="">
+
+                                <h6 class="fw-semibold mb-2">
+                                    Shoulder Bag Leather Bag Leather undertakes laborious physical physical
+                                </h6>
+
+                                <p class="price-main">$130.00</p>
+                                <p class="price-old">From $340.00</p>
+
+                                <button class="btn add-btn w-100">Add to card</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="col-12 col-md-4">
+                            <div class="product-card p-3 position-relative">
+
+                                <span class="badge sale-badge">30%</span>
+                                <span class="fav-icon">♡</span>
+
+                                <img src="assets/images/img2.png" class="img-fluid mb-3 product-img" alt="">
+
+                                <h6 class="fw-semibold mb-2">
+                                    Shoulder Bag Leather Bag Leather undertakes laborious physical physical
+                                </h6>
+
+                                <p class="price-main">$130.00</p>
+                                <p class="price-old">From $340.00</p>
+
+                                <button class="btn add-btn w-100">Add to card</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="col-12 col-md-4">
+                            <div class="product-card p-3 position-relative">
+
+                                <span class="fav-icon">♡</span>
+
+                                <img src="assets/images/img3.png" class="img-fluid mb-3 product-img" alt="">
+
+                                <h6 class="fw-semibold mb-2">
+                                    Shoulder Bag Leather Bag Leather undertakes laborious physical physical
+                                </h6>
+
+                                <p class="price-main">$130.00</p>
+                                <p class="price-old">From $340.00</p>
+
+                                <button class="btn add-btn w-100">Add to card</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="featured-arrow prev-featured" type="button">
+                ←
+            </button>
+            <button class="featured-arrow next-featured" type="button" r">
+                →
+            </button>
+
+        </div>
+    </div>
+    <section class="bestseller-section py-5">
+
+        <div class="container position-relative">
+
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h3 class="fw-bold">Bestseller</h3>
+                <a href="#" class="view-all">View all products →</a>
+            </div>
+
+            <div id="bestsellerSlider" class="carousel slide">
+                <div class="carousel-inner">
+
+                    <!-- SLIDE (3 CARDS) -->
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+
+                            <!-- CARD 1 -->
+                            <div class="col-12 col-md-4">
+                                <div class="product-card p-3 position-relative">
+
+                                    <span class="badge new-badge">New</span>
+                                    <span class="fav-icon">♡</span>
+
+                                    <img src="assets/images/bag2.png" class="img-fluid mb-3 product-img" alt="">
+
+                                    <div class="rating mb-2">
+                                        <img src="assets/icons/5ulduz.png" alt="">
+                                    </div>
+
+                                    <h6 class="fw-semibold mb-2">
+                                        Shoulder Bag Leather Bag Leather
+                                        undertakes laborious physical physical
+                                    </h6>
+
+                                    <p class="price-main">$130.00</p>
+                                    <p class="price-old">From $340.00</p>
+
+                                    <button class="btn add-btn w-100">Add to card</button>
+                                </div>
+                            </div>
+
+                            <!-- CARD 2 -->
+                            <div class="col-12 col-md-4">
+                                <div class="product-card p-3 position-relative">
+
+                                    <span class="badge sale-badge">30%</span>
+                                    <span class="fav-icon">♡</span>
+
+                                    <img src="assets/images/kisspng-lancel-handbag-leather-clothing-accessories-women-bag-5abc8960466306 1.png"
+                                        class="img-fluid mb-3 product-img" alt="">
+
+                                    <div class="rating mb-2">
+                                        <img src="assets/icons/5ulduz.png" alt="">
+                                    </div>
+
+                                    <h6 class="fw-semibold mb-2">
+                                        Shoulder Bag Leather Bag Leather
+                                        undertakes laborious physical physical
+                                    </h6>
+
+                                    <p class="price-main">$130.00</p>
+                                    <p class="price-old">From $340.00</p>
+
+                                    <button class="btn add-btn w-100">Add to card</button>
+                                </div>
+                            </div>
+
+                            <!-- CARD 3 -->
+                            <div class="col-12 col-md-4">
+                                <div class="product-card p-3 position-relative">
+
+                                    <span class="badge sale-badge">30%</span>
+                                    <span class="fav-icon">♡</span>
+
+                                    <img src="assets/images/bag1.png" class="img-fluid mb-3 product-img" alt="">
+
+                                    <div class="rating mb-2">
+                                        <img src="assets/icons/5ulduz.png" alt="">
+                                    </div>
+
+                                    <h6 class="fw-semibold mb-2">
+                                        Shoulder Bag Leather Bag Leather
+                                        undertakes laborious physical physical
+                                    </h6>
+
+                                    <p class="price-main">$130.00</p>
+                                    <p class="price-old">From $340.00</p>
+
+                                    <button class="btn add-btn w-100">Add to card</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="featured-arrow prev-featured" type="button">
+                    ←
+                </button>
+                <button class="featured-arrow next-featured" type="button">
+                    →
+                </button>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="bestseller-section py-5">
+
+        <div class="container position-relative">
+
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h3 class="fw-bold">Discount Products</h3>
+                <a href="#" class="view-all">View all products →</a>
+            </div>
+
+            <div id="bestsellerSlider" class="carousel slide">
+                <div class="carousel-inner">
+
+                    <!-- SLIDE (3 CARDS) -->
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+
+                            <!-- CARD 1 -->
+                            <div class="col-12 col-md-4">
+                                <div class="product-card p-3 position-relative">
+
+                                    <span class="badge new-badge">New</span>
+                                    <span class="fav-icon">♡</span>
+
+                                    <img src="assets/images/bag2.png" class="img-fluid mb-3 product-img" alt="">
+
+                                    <div class="rating mb-2">
+                                        <img src="assets/icons/5ulduz.png" alt="">
+                                    </div>
+
+                                    <h6 class="fw-semibold mb-2">
+                                        Shoulder Bag Leather Bag Leather
+                                        undertakes laborious physical physical
+                                    </h6>
+
+                                    <p class="price-main">$130.00</p>
+                                    <p class="price-old">From $340.00</p>
+
+                                    <button class="btn add-btn w-100">Add to card</button>
+                                </div>
+                            </div>
+
+                            <!-- CARD 2 -->
+                            <div class="col-12 col-md-4">
+                                <div class="product-card p-3 position-relative">
+
+                                    <span class="badge sale-badge">30%</span>
+                                    <span class="fav-icon">♡</span>
+
+                                    <img src="assets/images/kisspng-lancel-handbag-leather-clothing-accessories-women-bag-5abc8960466306 1.png"
+                                        class="img-fluid mb-3 product-img" alt="">
+
+                                    <div class="rating mb-2">
+                                        <img src="assets/icons/5ulduz.png" alt="">
+                                    </div>
+
+                                    <h6 class="fw-semibold mb-2">
+                                        Shoulder Bag Leather Bag Leather
+                                        undertakes laborious physical physical
+                                    </h6>
+
+                                    <p class="price-main">$130.00</p>
+                                    <p class="price-old">From $340.00</p>
+
+                                    <button class="btn add-btn w-100">Add to card</button>
+                                </div>
+                            </div>
+
+                            <!-- CARD 3 -->
+                            <div class="col-12 col-md-4">
+                                <div class="product-card p-3 position-relative">
+
+                                    <span class="badge sale-badge">30%</span>
+                                    <span class="fav-icon">♡</span>
+
+                                    <img src="assets/images/bag1.png" class="img-fluid mb-3 product-img" alt="">
+
+                                    <div class="rating mb-2">
+                                        <img src="assets/icons/5ulduz.png" alt="">
+                                    </div>
+
+                                    <h6 class="fw-semibold mb-2">
+                                        Shoulder Bag Leather Bag Leather
+                                        undertakes laborious physical physical
+                                    </h6>
+
+                                    <p class="price-main">$130.00</p>
+                                    <p class="price-old">From $340.00</p>
+
+                                    <button class="btn add-btn w-100">Add to card</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <button class="featured-arrow prev-featured" type="button">
+                    ←
+                </button>
+                <button class="featured-arrow next-featured" type="button">
+                    →
+                </button>
+
+            </div>
+        </div>
+
+    </section>
+    <footer class="snobella-footer pt-5 pb-4">
+        <div class="container">
+
+            <div class="row">
+                <!-- Left Section -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="logo">Snobella</h4>
+                    <p class="footer-text">
+                        The wise man therefore always holds selection.
+                        The wise man therefore always rejects pleasures
+                        to secure other greater.
+                    </p>
+
+                    <p class="footer-contact">
+                        <i class="bi bi-envelope"><img src="assets/icons/email (3) 1.png" alt=""></i> Snobella@gmail.com
+                    </p>
+                    <p class="footer-contact">
+                        <i class="bi bi-telephone"><img src="assets/icons/phone-call (3) 1.png" alt=""></i> +748 383 23
+                        14
+                    </p>
+
+                    <button class="btn send-btn">
+                        <i class="bi bi-send"></i> Send message
+                    </button>
+                </div>
+                <!-- Shop -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Shop</h5>
+                    <ul class="footer-list">
+                        <li><a href="#">Shoulder Bag</a></li>
+                        <li><a href="#">Backpack</a></li>
+                        <li><a href="#">Tote Bag</a></li>
+                        <li><a href="#">Hand Bag</a></li>
+                        <li><a href="#">Evening bags</a></li>
+                        <li><a href="#">Purse</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="footer-list">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Customer service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Help -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Help</h5>
+                    <ul class="footer-list">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Cancellation of the order</a></li>
+                        <li><a href="#">Dont go back</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom text-center mt-4 pt-3">
+                <p>© 2020. All rights reserved.</p>
+                <div class="social-icons">
+                    <i class="bi bi-instagram"><img src="assets/icons/instagram (1).png" alt=""></i>
+                    <i class="bi bi-facebook"><img src="assets/icons/facebook (6).png" alt=""></i>
+                    <i class="bi bi-whatsapp"><img src="assets/icons/whatsapp.png" alt=""></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
